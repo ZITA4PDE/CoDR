@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Comments</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create comment</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1<datalist><option>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=lines<datalist><option>name=lines</option><option>//input[@name='lines']</option><option>//td[@id='checkbox-1']/label/input</option><option>//label/input</option><option>css=input[name="lines"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[6]<datalist><option>xpath=(//button[@type='button'])[6]</option><option>//div[@id='main-content']/div/div/div/button</option><option>//body/div/div/div[2]/div/div/div/button</option><option>css=button.btn.btn-outline-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=comment-textarea<datalist><option>id=comment-textarea</option><option>//textarea[@id='comment-textarea']</option><option>//form[@id='modal-form']/div/textarea</option><option>//textarea</option><option>css=#comment-textarea</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=comment-textarea<datalist><option>id=comment-textarea</option><option>//textarea[@id='comment-textarea']</option><option>//form[@id='modal-form']/div/textarea</option><option>//textarea</option><option>css=#comment-textarea</option></datalist></td><td>Comment</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[9]<datalist><option>xpath=(//button[@type='button'])[9]</option><option>//div[@id='reply-modal']/div/div/div[3]/button[2]</option><option>//div[2]/div/div[2]/div/div/div[3]/button[2]</option><option>css=#reply-modal &gt; div.modal-dialog &gt; div.modal-content.custom-modal &gt; div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAlert</td><td>Success<datalist><option>Success</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Reply to comment</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1<datalist><option>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='comment-1']/div/div[2]/button<datalist><option>//div[@id='comment-1']/div/div[2]/button</option><option>//div[2]/button</option><option>css=button.btn.btn-primary.btn-sm.float-right.reply-button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=comment-textarea<datalist><option>id=comment-textarea</option><option>//textarea[@id='comment-textarea']</option><option>//form[@id='modal-form']/div/textarea</option><option>//textarea</option><option>css=#comment-textarea</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=comment-textarea<datalist><option>id=comment-textarea</option><option>//textarea[@id='comment-textarea']</option><option>//form[@id='modal-form']/div/textarea</option><option>//textarea</option><option>css=#comment-textarea</option></datalist></td><td>Reply</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[11]<datalist><option>xpath=(//button[@type='button'])[11]</option><option>//div[@id='reply-modal']/div/div/div[3]/button[2]</option><option>//div[2]/div/div[2]/div/div/div[3]/button[2]</option><option>css=#reply-modal &gt; div.modal-dialog &gt; div.modal-content.custom-modal &gt; div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAlert</td><td>Success<datalist><option>Success</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='comment-1']/div/div[2]/p/span<datalist><option>//div[@id='comment-1']/div/div[2]/p/span</option><option>//p/span</option><option>css=span.text-info.text-center</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Go to file</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/profile<datalist><option>http://130.89.7.104:3000/profile</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=comment_button<datalist><option>id=comment_button</option><option>link=Go to file</option><option>//a[contains(text(),'Go to file')]</option><option>//a[@id='comment_button']</option><option>//div[@id='commentList']/div/div[2]/div/div[2]/a</option><option>//a[contains(@href, '/modules/1/courses/1/exercises/1/projects/1/files/1#comment-2')]</option><option>//div[2]/a</option><option>css=#comment_button</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Toggle visibility</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1#comment-2<datalist><option>http://130.89.7.104:3000/modules/1/courses/1/exercises/1/projects/1/files/1#comment-2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[7]<datalist><option>xpath=(//button[@type='button'])[7]</option><option>//div[@id='comment-1']/div/div/div/button</option><option>//div[2]/div/div/div/div/button</option><option>css=button.btn.btn-sm.btn-warning.mr-1</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAlert</td><td>Visibility updated<datalist><option>Visibility updated</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

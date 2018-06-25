@@ -1,0 +1,145 @@
+@import "variables";
+//Custom
+@import "~bootstrap/scss/bootstrap";
+@import "bootswatch";
+
+$navbar-height: 8em;
+$breadcrumb-height : 4em;
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.navbar {
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-icon {
+    padding-right: $navbar-padding-x;
+    color: $white;
+}
+
+.navbar-profile-banner {
+    padding-right: $navbar-padding-x;
+}
+
+.navbar-profile {
+    padding-left: $navbar-padding-x;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: inherit;
+    }
+
+    i {
+        color: $white;
+        font-size: 3em;
+        padding-right: $navbar-padding-x;
+    }
+}
+
+#modules {
+    height: calc(100vh - #{$navbar-height});
+    overflow-y: scroll;
+}
+
+#main-row {
+    height: calc(100vh - #{$navbar-height});
+
+    #main-content {
+        height: 100%;
+        overflow-y: auto;
+
+
+        .code-block {
+            display: flex;
+            flex-flow: column;
+            height: calc(100vh - #{$navbar-height} - #{$breadcrumb-height});
+            overflow-y : auto;
+        }
+
+        .comment-block {
+            display: flex;
+            flex-flow: column;
+            height: calc(100vh - #{$navbar-height} - #{$breadcrumb-height});
+            overflow-y : auto;
+        }
+
+        .root-comment {
+            cursor: pointer;
+        }
+
+
+    }
+
+    #sidebar {
+        height: 100%;
+        box-shadow: 0 10px 10px;
+        overflow-x: auto;
+        overflow-y: auto;
+
+        .treeview span.icon {
+            color: $blue;
+        }
+
+        .glyphicon-big {
+            font-size: 2rem;
+            margin: 0.5rem;
+            z-index: 1;
+        }
+    }
+}
+
+.top-margin {
+    margin-top: 1em;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.loader {
+    width: 100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.treeview .list-group-item {
+	cursor: pointer;
+}
+
+.treeview span {
+	width: 1rem;
+	height: 1rem;
+}
+
+.treeview span.indent {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.treeview span.icon {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.btn {
+    z-index: 1;
+}
+
+._invisible {
+    border-style: dashed;
+    border-width: 0.1em;
+    border-color: black;
+}

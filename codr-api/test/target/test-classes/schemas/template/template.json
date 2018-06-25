@@ -1,0 +1,296 @@
+
+
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "id": {
+      "$id": "/properties/id",
+      "type": "integer",
+      "title": "The Id Schema ",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "title": "The Name Schema ",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "rights": {
+      "$id": "/properties/rights",
+      "type": "array",
+      "items": {
+        "$id": "/properties/rights/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/rights/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema ",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "description": {
+            "$id": "/properties/rights/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema ",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          },
+          "project_rights": {
+            "$id": "/properties/rights/items/properties/project_rights",
+            "type": "object",
+            "properties": {
+              "members": {
+                "$id": "/properties/rights/items/properties/project_rights/properties/members",
+                "type": "object",
+                "properties": {
+                  "can_view": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/members/properties/can_view",
+                    "type": "boolean",
+                    "title": "The Can_view Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_edit": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/members/properties/can_edit",
+                    "type": "boolean",
+                    "title": "The Can_edit Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_create_comment": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/members/properties/can_create_comment",
+                    "type": "boolean",
+                    "title": "The Can_create_comment Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_create_visible_comment": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/members/properties/can_create_visible_comment",
+                    "type": "boolean",
+                    "title": "The Can_create_visible_comment Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_delete": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/members/properties/can_delete",
+                    "type": "boolean",
+                    "title": "The Can_delete Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              },
+              "other": {
+                "$id": "/properties/rights/items/properties/project_rights/properties/other",
+                "type": "object",
+                "properties": {
+                  "can_view": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/other/properties/can_view",
+                    "type": "boolean",
+                    "title": "The Can_view Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_edit": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/other/properties/can_edit",
+                    "type": "boolean",
+                    "title": "The Can_edit Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_create_comment": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/other/properties/can_create_comment",
+                    "type": "boolean",
+                    "title": "The Can_create_comment Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_create_visible_comment": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/other/properties/can_create_visible_comment",
+                    "type": "boolean",
+                    "title": "The Can_create_visible_comment Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_delete": {
+                    "$id": "/properties/rights/items/properties/project_rights/properties/other/properties/can_delete",
+                    "type": "boolean",
+                    "title": "The Can_delete Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "comment_rights": {
+            "$id": "/properties/rights/items/properties/comment_rights",
+            "type": "object",
+            "properties": {
+              "owner": {
+                "$id": "/properties/rights/items/properties/comment_rights/properties/owner",
+                "type": "object",
+                "properties": {
+                  "can_view": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/owner/properties/can_view",
+                    "type": "boolean",
+                    "title": "The Can_view Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_edit": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/owner/properties/can_edit",
+                    "type": "boolean",
+                    "title": "The Can_edit Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_delete": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/owner/properties/can_delete",
+                    "type": "boolean",
+                    "title": "The Can_delete Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_toggle_visibility": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/owner/properties/can_toggle_visibility",
+                    "type": "boolean",
+                    "title": "The Can_toggle_visibility Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              },
+              "member": {
+                "$id": "/properties/rights/items/properties/comment_rights/properties/member",
+                "type": "object",
+                "properties": {
+                  "can_view": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/member/properties/can_view",
+                    "type": "boolean",
+                    "title": "The Can_view Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_edit": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/member/properties/can_edit",
+                    "type": "boolean",
+                    "title": "The Can_edit Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_delete": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/member/properties/can_delete",
+                    "type": "boolean",
+                    "title": "The Can_delete Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_toggle_visibility": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/member/properties/can_toggle_visibility",
+                    "type": "boolean",
+                    "title": "The Can_toggle_visibility Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              },
+              "other": {
+                "$id": "/properties/rights/items/properties/comment_rights/properties/other",
+                "type": "object",
+                "properties": {
+                  "can_view": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/other/properties/can_view",
+                    "type": "boolean",
+                    "title": "The Can_view Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_edit": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/other/properties/can_edit",
+                    "type": "boolean",
+                    "title": "The Can_edit Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_delete": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/other/properties/can_delete",
+                    "type": "boolean",
+                    "title": "The Can_delete Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  },
+                  "can_toggle_visibility": {
+                    "$id": "/properties/rights/items/properties/comment_rights/properties/other/properties/can_toggle_visibility",
+                    "type": "boolean",
+                    "title": "The Can_toggle_visibility Schema ",
+                    "default": false,
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

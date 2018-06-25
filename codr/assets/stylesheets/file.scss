@@ -1,0 +1,37 @@
+.code-block {
+  overflow-x : auto;
+}
+
+.code-line {
+  overflow-x: unset;
+}
+
+.root-comment {
+  margin-bottom: 1em;
+  border: 0.3em solid #FFFFFF;
+
+}
+
+.comment {
+  margin: 1em 0 0 2em;
+}
+
+.comment-reply-comment {
+  margin: 0 0 1em 0;
+}
+
+.line-number {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.reply-button {
+  z-index: 1;
+}
+
+#main-content {
+  overflow-y: hidden;
+}
+

@@ -1,0 +1,22 @@
+{
+  "title": "right group list",
+  "type": "array",
+  "items": {
+    "title" : "right-group",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "The id of the right group",
+        "default": 0
+      },
+      "description": {
+        "type": "string",
+        "title": "The Description of the right group",
+        "default": ""
+      }
+    },
+    "required": ["id", "description"]
+  }
+}
+

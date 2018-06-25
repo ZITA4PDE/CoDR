@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Creating</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create module</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules<datalist><option>http://130.89.7.104:3000/modules</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='modules']/div/div/div[2]/button</option><option>//div[2]/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='createModule']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='createModule']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td>Test</td>
+</tr>
+<tr><td>type</td><td>name=description<datalist><option>name=description</option><option>//textarea[@name='description']</option><option>//div[@id='createModule']/div/div/div[2]/div/textarea</option><option>//textarea</option><option>css=textarea[name="description"]</option></datalist></td><td>test</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='createModule']/div/div/div[3]/button[2]</option><option>//button[2]</option><option>css=div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='createModule']/div/div/div[3]/button</option><option>//div[3]/button</option><option>css=button.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create course</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1<datalist><option>http://130.89.7.104:3000/modules/4</option><option>http://130.89.7.104:3000/modules/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='main-content']/div/div[2]/div/div[2]/button</option><option>//div[2]/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='courseModal']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='courseModal']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td>Test</td>
+</tr>
+<tr><td>type</td><td>name=description<datalist><option>name=description</option><option>//textarea[@name='description']</option><option>//div[@id='courseModal']/div/div/div[2]/div/textarea</option><option>//textarea</option><option>css=textarea[name="description"]</option></datalist></td><td>test</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='courseModal']/div/div/div[3]/button[2]</option><option>//button[2]</option><option>css=div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='courseModal']/div/div/div[2]/button</option><option>//form/div/div/div/div[2]/button</option><option>css=button.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create project group</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1<datalist><option>http://130.89.7.104:3000/modules/4</option><option>http://130.89.7.104:3000/modules/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Project groups<datalist><option>link=Project groups</option><option>//a[contains(text(),'Project groups')]</option><option>//div[@id='nav_list']/a[2]</option><option>//a[contains(@href, '#projectgroup')]</option><option>//a[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='main-content']/div/div[2]/div/div/button</option><option>//div/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAlert</td><td>success<datalist><option>success</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create exercise</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1/courses/1<datalist><option>http://130.89.7.104:3000/modules/4/courses/2</option><option>http://130.89.7.104:3000/modules/1/courses/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='exercises']/div/div/div[2]/button</option><option>//div[2]/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='createExercise']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=name<datalist><option>id=name</option><option>name=name</option><option>//input[@id='name']</option><option>//div[@id='createExercise']/div/div/div[2]/div/input</option><option>//input</option><option>css=#name</option></datalist></td><td>Test</td>
+</tr>
+<tr><td>type</td><td>name=description<datalist><option>name=description</option><option>//textarea[@name='description']</option><option>//div[@id='createExercise']/div/div/div[2]/div/textarea</option><option>//textarea</option><option>css=textarea[name="description"]</option></datalist></td><td>Test</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='createExercise']/div/div/div[3]/button[2]</option><option>//button[2]</option><option>css=div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='createExercise']/div/div/div[2]/button</option><option>//form/div/div/div/div[2]/button</option><option>css=button.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create project</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://130.89.7.104:3000/modules/1/courses/1/exercises/1<datalist><option>http://130.89.7.104:3000/modules/4/courses/2/exercises/1</option><option>http://130.89.7.104:3000/modules/1/courses/1/exercises/1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[2]<datalist><option>xpath=(//button[@type='button'])[2]</option><option>//div[@id='main-content']/div/div[2]/div/div[2]/button</option><option>//div[2]/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='createProject']/div/div/div[3]/button[2]</option><option>//button[2]</option><option>css=div.modal-footer &gt; button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[3]<datalist><option>xpath=(//button[@type='button'])[3]</option><option>//div[@id='createProject']/div/div/div[2]/button</option><option>//form/div/div/div/div[2]/button</option><option>css=button.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
